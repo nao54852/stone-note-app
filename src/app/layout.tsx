@@ -14,9 +14,8 @@ const notoSerifJP = Noto_Serif_JP({
 })
 
 export const metadata: Metadata = {
-  title: "石の記録 - STONE NOTE",
-  description: "探索日記一覧ページ - Exploration Log List",
-  generator: "v0.app",
+  title: "STONE NOTE",
+  description: "岩石・鉱物採取の記録です",
 }
 
 export default function RootLayout({
