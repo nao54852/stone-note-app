@@ -125,6 +125,7 @@
   }
 }
 
+/* Added custom serif font import for elegant Japanese typography (loaded via next/font) */
 /* Added parchment texture and paper-like effects */
 .parchment-texture {
   background-image: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.03) 0%, transparent 50%),

@@ -14,8 +14,8 @@ const notoSerifJP = Noto_Serif_JP({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "石の記録 - STONE NOTE",
+  description: "探索日記一覧ページ - Exploration Log List",
   generator: "v0.app",
 }
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${notoSerifJP.variable}`}>
         <Suspense>
           {children}

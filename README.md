@@ -42,26 +42,38 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ```
 stone-note-app/
 ├── src/                          # ソースコードディレクトリ
-│   └── app/                      # Next.js App Router
-│       ├── favicon.ico           # ファビコン
-│       ├── globals.css           # グローバルスタイル（Tailwind CSS）
-│       ├── layout.tsx            # ルートレイアウトコンポーネント
-│       └── page.tsx              # ホームページコンポーネント
+│   ├── app/                      # Next.js App Router
+│   │   ├── exploration/          # 探索日記ページ
+│   │   │   └── page.tsx
+│   │   ├── minerals/             # 鉱石記録ページ
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico           # ファビコン
+│   │   ├── globals.css           # グローバルスタイル（Tailwind CSS）
+│   │   └── layout.tsx            # ルートレイアウトコンポーネント
+│   ├── components/               # 再利用可能なUIコンポーネント
+│   │   ├── ExplorationLogList.tsx
+│   │   ├── MineralRecordCard.tsx
+│   │   └── ui/
+│   │       └── button.tsx
+│   └── lib/                      # ユーティリティ
+│       └── utils.ts
 ├── public/                       # 静的ファイル
-│   ├── file.svg                  # ファイルアイコン
-│   ├── globe.svg                 # グローブアイコン
-│   ├── next.svg                  # Next.jsロゴ
-│   ├── vercel.svg                # Vercelロゴ
-│   └── window.svg                # ウィンドウアイコン
-├── node_modules/                 # 依存関係パッケージ
+│   ├── amethyst-purple-crystal.jpg
+│   ├── clear-quartz-crystal.png
+│   ├── pyrite-golden-mineral.jpg
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
 ├── package.json                  # プロジェクト設定と依存関係
 ├── package-lock.json             # 依存関係のロックファイル
 ├── next.config.ts                # Next.js設定ファイル
 ├── tsconfig.json                 # TypeScript設定ファイル
-├── tailwind.config.js            # Tailwind CSS設定ファイル
 ├── postcss.config.mjs            # PostCSS設定ファイル
 ├── eslint.config.mjs             # ESLint設定ファイル
 ├── next-env.d.ts                 # Next.js型定義ファイル
+├── requirements.md               # 要件定義
 └── README.md                     # プロジェクト説明書
 ```
 
